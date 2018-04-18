@@ -1,25 +1,52 @@
 document.getElementById('sekcjaNogi').addEventListener("click", function () {
-    showButton('myDropdownOne');
+    showList('myDropdownOne');
 });
 
 document.getElementById('sekcjaRece').addEventListener("click", function () {
-    showButton('myDropdownTwo');
+    showList('myDropdownTwo');
 });
 
 document.getElementById('sekcjaKregoslup').addEventListener("click", function () {
-    showButton('myDropdownThree');
+    showList('myDropdownThree');
 });
 
 document.getElementById('sekcjaRozciaganie').addEventListener("click", function () {
-    showButton('myDropdownFour');
+    showList('myDropdownFour');
 });
 
-function showButton(id) {
-     var x = document.getElementById(id);
-    if (x.style.display === "none") {
-        x.style.display = "block";
+function showList(id) {
+     const sekcja = document.getElementById(id);
+    if (sekcja.style.display === "none") {
+        sekcja.style.display = "block";
     } else {
-        x.style.display = "none";
-    }
+        sekcja.style.display = "none";
+    } 
 }
+
+function showExercise(target) {
+    var lista = document.createElement("li");
+    var t = document.createTextNode(target.innerHTML);
+    lista.appendChild(t);
+    document.getElementById("place").appendChild(lista);
+}
+
+
+document.addEventListener('click', function (event) {
+    if ( event.target.classList.contains('btn')) {
+        showExercise(event.target)
+    }
+}, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
 

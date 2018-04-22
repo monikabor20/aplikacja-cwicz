@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aplikacja-Ćwiczenia</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Arsenal|Pathway+Gothic+One" rel="stylesheet">
- 
+    <link href="https://fonts.googleapis.com/css?family=Arsenal|Pathway+Gothic+One" rel="stylesheet">
+
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  
+
     <link rel="stylesheet" type="text/css" href="style/stylesheet.css" />
 
 
@@ -24,21 +24,18 @@
             </div>
         </div>
         <div class="row mx-auto">
-            <div class="container-left col-lg-3">
-                <div class="btn-group-vertical mt-5">
-                    <div class="dropdown">
-                        <button onclick="kliknietaSekcja()" class="dropbtn" id="sekcjaNogi">Nogi</button>
+            <div class="container-left col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="btn-group-vertical col-lg-12 mt-5 mx-auto dropdown">
+                                          <button onclick="kliknietaSekcja()" class="dropbtn btn-block" id="sekcjaNogi">Nogi</button>
                         <div id="myDropdownOne" class="dropdown-content">
-                            <button type="button" class="btn btn-primary">Zginanie nóg w kolanach- na stojąco</button>
-                            <button type="button" class="btn btn-primary">Przyciąganie kolan do brody- na leżąco</button>
-                            <button type="button" class="btn btn-primary">Przyciąganie kolan do brzucha-na boku</button>
+                            <button type="button" class="btn btn-primary">Zginanie nóg w kolanach - na stojąco</button>
+                            <button type="button" class="btn btn-primary">Przyciąganie kolan do brody - na leżąco</button>
+                            <button type="button" class="btn btn-primary">Przyciąganie kolan do brzucha - na boku</button>
                             <button type="button" class="btn btn-primary">Wciskanie piąt do ziemi- leżąc na plecach</button>
-                            <button type="button" class="btn btn-primary">Noga w przód i w tył przy podnoszeniu samego biodra- na stojąco</button>
+                            <button type="button" class="btn btn-primary">Noga w przód i w tył przy podnoszeniu biodra</button>
                             <button type="button" class="btn btn-primary">Ćwiczenia kolan z taśmą</button>
-                        </div>
                     </div>
-                    <div class="dropdown">
-                        <button onclick="kliknietaSekcja()" class="dropbtn" id="sekcjaRece">Ręce</button>
+                                       <button onclick="kliknietaSekcja()" class="dropbtn btn-block" id="sekcjaRece">Ręce</button>
                         <div id="myDropdownTwo" class="dropdown-content">
                             <button type="button" class="btn btn-primary">Ćwiczenia z ciężarkiem</button>
                             <button type="button" class="btn btn-primary">Ćwiczenia z taśmą</button>
@@ -47,33 +44,32 @@
                             <button type="button" class="btn btn-primary">Pompki na stojąco z rękami na ścianie</button>
                             <button type="button" class="btn btn-primary">Podnoszenie rąk na wysokość barków</button>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <button onclick="kliknietaSekcja()" class="dropbtn" id="sekcjaKregoslup">Kręgosłup</button>
+                        <button onclick="kliknietaSekcja()" class="dropbtn btn-block" id="sekcjaKregoslup">Kręgosłup</button>
                         <div id="myDropdownThree" class="dropdown-content">
                             <button type="button" class="btn btn-primary">Ćwiczenia na krześle- na boki z butelką wody</button>
                             <button type="button" class="btn btn-primary">Ćwiczenia z taśmą</button>
                             <button type="button" class="btn btn-primary">Schylanie się i prostowanie</button>
                             <button type="button" class="btn btn-primary">Ćwiczenia na piłce</button>
-                            <button type="button" class="btn btn-primary">Poprawne chodzenie z mocno spiętym brzuchem i wyprostowaną postawą</button>
+                            <button type="button" class="btn btn-primary">Chodzenie ze spiętym brzuchem i unoszenie rąk</button>
                             <button type="button" class="btn btn-primary">Utrzymanie się na rękach opartych na stole</button>
                         </div>
-                    </div>
-                    <div class="dropdown">
-                        <button onclick="kliknietaSekcja()" class="dropbtn" id="sekcjaRozciaganie">Rozciąganie</button>
+                       <button onclick="kliknietaSekcja()" class="dropbtn btn-block" id="sekcjaRozciaganie">Rozciąganie</button>
                         <div id="myDropdownFour" class="dropdown-content">
-                            <button type="button" class="btn btn-primary">Nogi</button>
-                            <button type="button" class="btn btn-primary">Ręce</button>
-                            <button type="button" class="btn btn-primary">Kręgosłup</button>
+                            <button type="button" class="btn btn-primary">Nogi - na leżąco</button>
+                            <button type="button" class="btn btn-primary">Nogi - na siedząco</button>
+                            <button type="button" class="btn btn-primary">Nogi - na stojąco</button>
+                            <button type="button" class="btn btn-primary">Ręce - na leżąco</button>
+                            <button type="button" class="btn btn-primary">Ręce - na siedząco</button>
+                            <button type="button" class="btn btn-primary">Ręce -na stojąco</button>
+                            <button type="button" class="btn btn-primary">Kręgosłup -na stojąco</button>
+                            <button type="button" class="btn btn-primary">Kręgosłup -na siedząco</button>
+                            <button type="button" class="btn btn-primary">Kręgosłup - na stojąco</button>
                         </div>
                     </div>
-                </div>
-
             </div>
-            <div class="container-right col-lg-8 ml-4 pb-4 pl-4">
+            <div class="container-right col-12 col-sm-12 col-md-7 col-lg-7 ml-md-2 ml-lg-4 pb-4 pl-4 pr-4">
                 <div class="row">
                     <div class="place ml-3 mt-3" id="place">
-
                     </div>
                 </div>
             </div>

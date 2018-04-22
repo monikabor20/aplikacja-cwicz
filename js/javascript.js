@@ -2,7 +2,6 @@ var kliknietoWSekcje;
 document.getElementById('sekcjaNogi').addEventListener("click", function () {
     kliknietoWSekcje = "Nogi";
     showList('myDropdownOne');
-
 });
 
 document.getElementById('sekcjaRece').addEventListener("click", function () {
@@ -31,8 +30,8 @@ function showList(id) {
 
 function showExercise(target) {
     var lista = document.createElement("li");
-    var t = document.createTextNode(`${kliknietoWSekcje} - ${target.innerHTML}`);
-    lista.appendChild(t);
+    var exercise = document.createTextNode(`${kliknietoWSekcje} - ${target.innerHTML}`);
+    lista.appendChild(exercise);
     document.getElementById("place").appendChild(lista);
 
     var deleteButton = document.createElement("button");
@@ -41,12 +40,8 @@ function showExercise(target) {
         document.getElementById("place").removeChild(lista);
     })
     lista.appendChild(deleteButton);
-    return lista;
-
-
-
+        return lista;
 }
-
 
 document.addEventListener('click', function (event) {
     if (event.target.classList.contains('btn')) {

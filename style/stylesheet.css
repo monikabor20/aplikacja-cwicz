@@ -1,45 +1,58 @@
 * {
     box-sizing: border-box;
+    font-family: 'Arsenal', sans-serif
 }
 
 .container{
-    max-width: 1200px;
-    background-color: #989898;
+    max-width: 1300px;
+    background-image:url(../img/cube-3319359_1920.jpg);
     margin-left: auto;
     margin-right: auto;
 }
 
 .container-left{
-  
     height: 500px;
-    background-color: #c9f2b3;
+    background-color: #000000;
     border: 2px solid white;
+    border-radius: 20px;
 }
 
 .container-right{
-     height: 500px;
-    background-color: #b1ccc3;
+    min-height: 500px;
+    background-color: #e8f5f1;
     border: 2px solid white;
+    border-radius: 20px;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
 }
 
 li{
-    background-color: #75a5dd;
+    background-color: transparent;
+    margin-top: 10px;
 }
 
 li:hover{
-       background-color: #7b8a9b;
+    background-color: #9bd5e0;
 }
 
 .dropbtn {
-    width: 300px;
+    width: 270px;
     background-color: #3498DB;
     color: white;
     padding: 16px;
-    font-size: 16px;
+    font-size: 19px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 30px;
+}
+
+.delete{
+   float: right;
+    margin-left: 200px;
 }
 
 

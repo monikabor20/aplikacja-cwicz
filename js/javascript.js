@@ -29,19 +29,31 @@ function showList(id) {
 }
 
 function showExercise(target) {
-    var lista = document.createElement("li");
-    var exercise = document.createTextNode(`${kliknietoWSekcje} - ${target.innerHTML}`);
-    lista.appendChild(exercise);
-    document.getElementById("place").appendChild(lista);
+    if (window.matchMedia("(min-width: 500px)").matches) {
+        var lista = document.createElement("li");
+        var exercise = document.createTextNode(`${kliknietoWSekcje} - ${target.innerHTML}`);
+        lista.appendChild(exercise);
+        document.getElementById("place").appendChild(lista);
 
-    var deleteButton = document.createElement("button");
-    deleteButton.className = "delete fas fa-check";
-    deleteButton.addEventListener('click', function() {
-        document.getElementById("place").removeChild(lista);
-    })
-    lista.appendChild(deleteButton);
+        var deleteButton = document.createElement("button");
+        deleteButton.className = "delete fas fa-check";
+        deleteButton.addEventListener('click', function () {
+            document.getElementById("place").removeChild(lista);
+        })
+        lista.appendChild(deleteButton);
         return lista;
+    } else {
+        var lista = document.createElement("li");
+        var exercise = document.createTextNode(`${kliknietoWSekcje} - ${target.innerHTML}`);
+        lista.appendChild(exercise);
+        document.getElementById("place").appendChild(lista);
+
+        lista.addEventListener('click', function () {
+            document.getElementById("place").removeChild(lista);
+        })
+    }
 }
+
 
 document.addEventListener('click', function (event) {
     if (event.target.classList.contains('btn')) {
